@@ -59,13 +59,13 @@
     <header>
       <nav>
         <div class="logo"><a href="#">Dott.ssa Maria Rossi</a></div>
-        <div class="navigation">
+        <div id="nav-list" class="nav-list">
           <ul>
             <li><a href="#about-section">Chi sono</a></li>
             <li><a href="#services">Servizi</a></li>
             <li><a href="#methods">Approccio</a></li>
           </ul>
-          <div
+          <!-- <div
             class="button-cta"
             aria-label="Prenota ora un incontro su Whatsapp"
           >
@@ -76,20 +76,32 @@
               target="_blank"
               >Prenota</a
             >
-          </div>
+          </div> -->
         </div>
         <button
+          id="btn"
           class="hamburger"
           type="button"
           aria-label="Menù di navigazione"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          ☰
         </button>
       </nav>
       <section class="hero-section">
-        <div class="hero-image"></div>
+        <div class="hero-image">
+          <picture>
+            <source srcset="image/hero-image.avif" type="image/avif" />
+            <source srcset="image/hero-image.webp" type="image/webp" />
+            <img
+              src="/image/hero-image.jpg"
+              width="1280"
+              height="654"
+              alt="Foto dell'ufficio"
+              title="Ufficio"
+              draggable="false"
+            />
+          </picture>
+        </div>
         <div class="hero-text">
           <h1>Uno spazio sicuro per ritrovarti</h1>
           <div
@@ -214,11 +226,12 @@
       </address>
       <div class="container-footer">
         <ul>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Cookie Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
         </ul>
         <p>© 2025 · Tutti i diritti sono riservati</p>
       </div>
     </footer>
+    <script src=".script/script.js"></script>
   </body>
 </html>
